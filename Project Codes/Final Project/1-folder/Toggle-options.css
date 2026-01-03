@@ -1,0 +1,75 @@
+
+.toggle-options-div{
+    flex: 1.05;
+    overflow-y: scroll;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.toggled-options-div{
+    flex: 2;
+}
+
+.meta-div-thing{
+    background-size: 255px;
+    background-repeat: no-repeat;
+    height: 248px;
+    width: 267px;
+    background-image: url(Pictures/Edit-pics/Meta-pic.png);
+    margin-left: 24px;
+    margin-bottom: 15px;
+}
+
+.meta-div-thing:hover{
+    background-image: url(Pictures/Edit-pics/Meta-hover-pic.png);
+    
+}
+
+.setting-text{
+    color: white;
+    margin-left: 52px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.toggle-options{
+    display: block;
+    background-color: black;
+    border: none;
+    color: white;
+    width: 250px;
+    height: 50px;
+    text-align: left;
+    margin-left: 36px;
+    font-size: 14px;
+    transition: 0.1s;
+    padding-top: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 16px;
+    border-radius: 10px;
+
+    font-weight: 0;
+}
+
+.toggle-options:hover{
+    background-color: rgb(26, 26, 26);
+    font-weight: lighter;
+}
+
+.toggled{
+    background-color: rgb(38, 38, 38);
+}
+
+.toggled:hover{
+    background-color: rgb(64, 64, 64);
+}
+
+
+.Professional-account-text{
+    color: rgb(0, 149, 246);
+    margin-left: 52px;
+    font-size: 14px;
+    font-weight: 600;
+    width: fit-content;
+}

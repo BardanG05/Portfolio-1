@@ -1,0 +1,149 @@
+body{
+    background-image: url(Pictures/backgroundhearts.jpg);
+    background-color: black;
+}
+
+
+
+
+
+.main-img-div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column; 
+    width: 100%;
+    margin-top: 60px;
+}
+
+.main-img{
+    height: 300px;
+    width: 500px ;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.question{
+    font-weight: bolder;
+    font-size: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+}
+
+.button{
+    height: 50px;
+    width: 150px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+}
+
+.yes{
+    background-color: lightgreen;
+    left: 41%;
+}
+
+.no{
+    background-color: red;
+    right: 41%;
+    transition: left 0.5s ease, top 0.5s ease;
+}
+
+.button:hover{
+    cursor: pointer;
+}
+
+.buttons-div{
+    justify-content: center;
+    margin-top: 20px;
+    gap: 70px;
+    display: flex;
+    height: 100px;
+    width: 100%;
+}
+
+.audio-mac{
+    display: none;
+}
+
+.second-thing{
+    display: none;
+}
+
+
+.Hi-text{
+    color: white;
+    font-size: 80px;
+    position: absolute;
+    top: 30%; 
+    left: 30%;
+    opacity: 1; 
+    transition: opacity 1s;  
+}
+
+.love{
+    font-size: 100px;
+    color: white;
+    position: absolute;
+    opacity: 1;
+    transition: 1;
+    left: 43%;
+}
+
+.biglove{
+    font-size: 120px;
+    color: white;
+    opacity: 1;
+    position: absolute;
+    top: 20%;
+    left: 43%;
+    display: none;
+}
+
+.l1 { top: 10px; display: none;}
+.l2 { top: 80px; display: none; }
+.l3 { top: 150px; display: none; }
+.l4 { top: 220px; display: none;}
+.l5 { top: 290px; display: none; }
+.l6 { top: 360px; display: none;}
+
+.scroll-to-see{
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    top: 900px;
+    left: 30%;
+    transition: top 2s;
+}
+
+.space{
+    margin-bottom: 900px;
+}
+
+.newyears-div{
+    display: grid;
+    place-items: center;
+    align-content: center;
+    margin-top: 101vh;
+
+    p{
+        color: white;
+        width: 50%;
+        font-size: 30px;
+    }
+}
+
+.hidden{
+    opacity: 0;
+    filter: blur(0);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}

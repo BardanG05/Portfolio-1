@@ -1,0 +1,118 @@
+html {
+    overflow-x: hidden; 
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh; 
+    color: white;
+    background-color: black ;
+}
+
+.background-container{
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    overflow:hidden;
+    z-index: 0;
+    background-color: black;
+}
+
+.noshow{
+    display: none;
+}
+
+.background-img{
+    position: absolute;
+    width: 110%;
+    height: 110vh;
+    background-image: url(../Pictures/shine.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: all 300ms ease;
+    z-index: -1;
+}   
+
+.filter1{
+    display:block;
+    width: 100%;
+    height: 100vh;
+    z-index: -5;
+    background-color: pink;
+}
+
+.Portfolio-section{
+    
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;;
+    background-size: 100%;
+    background-color: black;
+    position: relative;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 0;
+}
+
+.bubbles{
+    position: relative;
+    display: flex;
+    gap: clamp(0.5rem, 2vw, 2rem);
+}
+.bubbles span{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background-color: yellow;
+    box-shadow: 0 0 0 10px gold;
+    animation: animate 15s linear infinite;
+    animation-duration: calc(8000s /var(--i));
+    animation-delay: -5000s;
+    border-radius: 100%;
+
+}
+
+.bubbles span:nth-child(even){
+    box-shadow: red;
+    box-shadow: 0 0 0 10px gold;
+}
+
+@keyframes animate{
+    0%
+    {
+        transform: translateY(300vh) scale(0.1);
+    }
+    100%{
+        transform: translateY(0vh) scale(0.1);
+    }
+}
+
+.bubbles span.glow {
+    animation: animate 15s linear infinite, glow 3s ease-in-out infinite;
+    animation-delay: calc(var(--i) * -0.5s), calc(var(--i) * 0.3s);
+
+}
+
+@keyframes glow {
+    0%, 70%, 100% {
+        box-shadow: 0 0 0 10px gold;
+        background-color: yellow;
+    }
+    35% {
+        box-shadow: 0 0 20px 8px #fffacd;
+        background-color: #f7efa0;
+    }
+}
+

@@ -1,0 +1,409 @@
+.profile-big-div{
+    height: 100%;
+    padding: 30px 20px 0px;
+    margin-left: 150px;
+    margin-right: 150px;
+    max-width: 100%;
+}
+
+.header-div{
+    display: flex;
+    margin-left: 70px;
+    height: 210px;
+    
+}
+
+.profile-pic-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 172px;
+    width: 292px;
+
+    margin-right: 28px;
+}
+.proflile-bio-div{
+    flex: 1;
+    margin-bottom: 60px;
+    margin-left: 70px;
+}
+
+.profile-pic{
+    height: 155px;
+    width: 155px;
+}
+
+.account-edit-div{
+    background-color: black;
+    width: 900px;
+    display: flex;
+    align-items: center;
+}
+
+.username-account{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: inline-block;
+    color: white;
+    font-size: 20px;
+    margin-right: 20px;
+    margin-top: 0;
+    margin-bottom: 0px;
+    text-decoration: none;
+}
+
+.username-account:hover{
+    cursor: pointer;
+}
+
+.edit-button{
+    background-color: #363636;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border: none;
+    color: white;
+    height: 32px;
+    width: 100px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 14px;
+
+    margin-right: 10px;
+}
+
+.edit-button:hover{
+    cursor: pointer;
+    background-color: #222222;
+}
+
+.archive-button{
+    background-color: #363636;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border: none;
+    color: white;
+    height: 32px;
+    width: 112px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 14px;
+
+    margin-right: 15px;
+}
+
+.archive-button:hover{
+    cursor: pointer;
+    background-color: #222222;
+}
+
+.setting-icon{
+    background-image: url(Pictures/Icons/Settings-icon.png);
+    height: 24px;
+    width: 24px;
+    background-size: 24px;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+}
+
+.setting-icon{
+    cursor: pointer;
+}
+
+.all-following{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.following-text{
+    display: inline-block;
+    color: white;
+    margin-top: 0;
+    margin-right: 35px;
+}
+
+.following-number{
+    display: inline-block;
+    color: white;
+    font-weight: 600;
+    margin-top: 0;
+    margin-right: 5px;
+
+}
+
+.bio-text{
+    color: white;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 14px;
+    margin-bottom: 8px;
+    font-weight: 600;
+    
+}
+
+.threads-profile-button{
+    display: flex;
+    height: 26px;
+    width: 100px;
+    color: white;
+    background-color: #363636;
+    align-items: center;
+    border: none;
+    border-radius: 100px;
+    margin-bottom: 5px;
+
+}
+
+.threads-profile-button:hover{
+    cursor: pointer;
+}
+
+.threads-icon-profile{
+    height: 18px;
+    width: 18px;
+    background-image: url(Pictures/Icons/Threads-icon.png);
+    background-size: 14px;
+    background-position: center;
+    margin-right: 3px;
+    background-repeat: no-repeat;
+    
+}
+
+.threads-text{
+    display: inline-block;
+    font-size: 12px;
+}
+
+.bio-text-flag{
+    color: white;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 14px;
+    margin-bottom: 5px;
+    font-weight: 400;
+}
+
+
+
+
+.highlights-div{
+    display: flex;
+    height: 130px;
+    margin-left: 40px;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.before-highlights{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 45px;
+}
+
+.highlights{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 85px;
+    width: 85px;
+    border: solid;
+    border-color: rgb(50, 50, 50);
+    border-radius: 100px;
+    border-width: 1px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.highlights:hover{
+    cursor: pointer;
+}
+
+.highlight-1{
+    height: 84px;
+    width: 84px;
+    
+}
+
+.highlight-2{
+    height: 84px;
+    width: 84px;
+}
+
+.highlight-new{
+    height: 84px;
+    width: 84px;
+}
+
+.name-highlights{
+    display: inline-block;
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+.pst-div{
+    width: 100%;
+    height: 52px;
+    display: flex;
+    flex-direction: row;
+    border-top: solid;
+    border-color:rgb(33, 33, 33);
+    border-width: 1px;
+    justify-content: center;
+    align-items: center;
+}
+
+.pst-div-div{
+    display: flex;
+    flex-direction: row;
+    margin-right: 60px;
+    height: 100%;
+    align-items: center;
+}
+
+.pst-div-div:hover{
+    cursor: pointer;
+}
+
+.pst-post-div{
+    border-top: solid;
+    border-color: white;
+    border-width: 1px;
+}
+
+.pst-text{
+    display: inline-block;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.pst-posts{
+    color: white;
+
+}
+
+.pst-saved{
+    color: #A8A8A8;
+}
+
+.pst-tagged{
+    color: #A8A8A8;
+}
+
+.posts-icon-profile{
+    background-image: url(Pictures/Profile-pics/Posts-icon.png);
+    height: 12px;
+    width: 12px;
+    background-repeat: no-repeat;
+    background-size: 12px;
+    margin-right: 5px;
+}
+
+.saved-icon-profile{
+    background-image: url(Pictures/Profile-pics/Saved-icon.png);
+    height: 12px;
+    width: 12px;
+    background-repeat: no-repeat;
+    background-size: 12px;
+    margin-right: 5px;
+}
+
+.tagged-icon-profile{
+    background-image: url(Pictures/Profile-pics/Tagged-icon.png);
+    height: 12px;
+    width: 12px;
+    background-repeat: no-repeat;
+    background-size: 12px;
+    margin-right: 5px;
+}
+
+.posts-div-2{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.post-row{
+    height: 309px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5px;
+}
+
+.post-box{
+    height: 309px;
+    width: 309px;
+    margin-right: 5px;
+}
+
+.post-box:hover{
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.like-comment-div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: 100%;
+}
+
+.post1{
+    background-image: url(Pictures/Profile-pics/Post1.png);
+    background-size: 309px;
+    background-repeat: no-repeat;
+}
+
+.post2{
+    background-image: url(Pictures/Profile-pics/Post2.png);
+    background-size: 309px;
+}
+
+.post3{
+    background-image: url(Pictures/Profile-pics/Post3.png);
+    background-size: 309px;
+}
+
+.post4{
+    background-image: url(Pictures/Profile-pics/Post3.png);
+    background-size: 309px;
+}
+
+.like-count-pic{
+    background-image: url(Pictures/Profile-pics/Like-count.png);
+    height: 20px;
+    width: 20px;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    margin-right: 5px;
+}
+
+.like-count{
+    font-size: 17px;
+    margin-right: 32px;
+    font-weight: 649;
+    color: white;
+    display: inline-block;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.comment-count-pic{
+    background-image: url(Pictures/Profile-pics/Comment-count.png);
+    height: 20px;
+    width: 20px;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    margin-right: 5px;
+}
+
+.comment-count{
+    font-size: 17px;
+    font-weight: 649;
+    color: white;
+    display: inline-block;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}

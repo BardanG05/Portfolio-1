@@ -1,0 +1,120 @@
+/* ============================= */
+/* ABOUT ME SECTION */
+/* ============================= */
+
+.About-me-container {
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: clamp(2rem, 6vw, 4rem);
+    background-color: black;
+    color: white;
+
+    border-bottom: solid 2px grey;
+}
+
+/* ============================= */
+/* TITLE */
+/* ============================= */
+
+.title-about-me {
+    font-family: 'consolas', monospace;
+    font-size: clamp(1.5rem, 4vw, 4rem);
+    font-weight: bold;
+    position: relative;
+    margin-bottom: clamp(2rem, 6vw, 3rem);
+}
+
+.title-about-me::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background-image: conic-gradient(red, blue);
+}
+
+/* ============================= */
+/* MAIN LAYOUT */
+/* ============================= */
+
+.about-me-slides {
+    width: 100%;
+    max-width: 1200px;
+
+    display: flex;
+    flex-direction: column; /* mobile first */
+    align-items: center;
+    gap: clamp(2rem, 6vw, 4rem);
+}
+
+/* ============================= */
+/* TEXT CONTENT */
+/* ============================= */
+
+.intro-p {
+    width: 100%;
+    max-width: 600px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.intro-text {
+    font-family: 'consolas', monospace;
+    font-size: clamp(0.95rem, 2.5vw, 1.2rem);
+    line-height: 1.6;
+    color: rgb(220, 220, 220);
+}
+
+/* ============================= */
+/* IMAGE */
+/* ============================= */
+
+.intro-pics {
+    width: 100%;
+    max-width: clamp(300px, 40vw, 400px);
+
+    display: flex;
+    justify-content: center;
+}
+
+.me1 {
+    width: 100%;
+    height: auto;
+    
+
+    object-fit: cover;
+
+    border-radius: 1rem;
+    border: 2px solid grey;
+
+    transition: transform 0.3s ease;
+    z-index: 2;
+}
+
+/* ============================= */
+/* DESKTOP LAYOUT */
+/* ============================= */
+
+@media (min-width: 900px) {
+    .about-me-slides {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .intro-p,
+    .intro-pics {
+        flex: 1;
+    }
+
+    .intro-p {
+        max-width: 600px;
+    }
+}

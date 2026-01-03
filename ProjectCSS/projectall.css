@@ -1,0 +1,189 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh; 
+    color: white;
+    background-color: black;
+    font-family: 'consolas', monospace; 
+    
+}
+
+
+ul {
+    list-style-type: none;
+}
+
+.nav-bar{
+    background-color: rgb(46, 45, 45);
+    width: 100%;
+    min-height: clamp(3.5rem, 8vw, 6.25rem);
+
+    z-index: 0;
+
+    position: sticky;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+
+    z-index: 99;
+}
+
+
+.left-nav{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 30%;
+    margin: 0;
+    align-items: center;
+    padding-left: clamp(0.75rem, 6vw, 8.5rem);
+}
+
+.bardan-logo{
+    height: clamp(1.8rem, 3.5vw, 4.5rem);
+    width: auto;
+    display: block;
+}
+
+
+.right-nav{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    align-self: right;
+    height: 100%;
+    width: 70%;
+    margin-right: clamp(0.75rem, 6vw, 8.5rem);   
+}
+
+.home, .about-me, .projects, .contact{
+    font-family: 'consolas', monospace;
+    font-size: clamp(0.7rem, 1.1vw, 1.6rem);
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    align-self: center;
+    position: relative;
+}
+
+.home, .about-me, .projects{
+    margin-right: clamp(0.75rem, 2vw, 2.5rem);
+}
+
+.home::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background-image:conic-gradient(white);
+    width: 0%;
+    transition: 0.5s;
+}
+
+.home:hover::before{
+    width: 100%;
+}
+
+.disable:hover{
+    cursor: not-allowed;
+}
+
+.back-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+
+  margin: clamp(1rem, 4vw, 2rem);
+
+  padding: clamp(0.4rem, 1.5vw, 0.6rem)
+           clamp(0.8rem, 2.5vw, 1.2rem);
+
+  font-family: consolas, monospace;
+  font-size: clamp(0.9rem, 2vw, 1.05rem);
+
+  color: white;
+  background-color: transparent;
+
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 0.4rem;
+
+  cursor: pointer;
+  text-decoration: none;
+
+  opacity: 0.85;
+
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease,
+    background-color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.header1{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    font-size: clamp(1.7rem, 5vw, 5rem);
+    margin-top: clamp(2rem, 5vw, 8rem);
+}
+
+.showimg{
+    display: block;
+    margin: clamp(1.5rem, 5vw, 3rem) auto;
+
+    width: 100%;
+    max-width: min(90%, 900px);
+
+    height: auto;
+
+    border: 2px solid grey;
+}
+
+p{
+    color: rgb(203, 203, 203);
+}
+
+.paragraphs{
+    display: flex;
+    align-self: center;
+    justify-content: flex-start;   
+    margin: 50px auto;       
+    flex-direction: column;
+    text-align: left;
+    max-width: clamp(90%, 60vw, 60%);
+    font-size: clamp(1rem, 1.2vw, 1.25rem);
+}
+
+.preview-container {
+  display: flex;
+  justify-content: flex-end;
+  padding: clamp(1rem, 4vw, 2rem);
+}
+
+.preview-button{
+    padding: clamp(0.6rem, 2vw, 0.9rem)
+           clamp(1.2rem, 3vw, 1.8rem);
+
+  font-size: clamp(0.9rem, 2vw, 1.1rem);
+
+  background-color: rgb(70, 70, 70);
+  font-family: consolas, monospace;
+  color: white;
+
+  border: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  text-decoration: none;
+
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}

@@ -1,0 +1,62 @@
+.title-div{
+    position: relative;
+    align-content: center;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+
+    display: inline-block;
+}
+
+.title-text{
+    font-size: clamp(1.8rem, 4vw, 3.8rem);
+    color: white;
+    text-align: center;
+    width: 100%;
+    font-family: 'consolas', monospace;
+
+
+    border-right: 5px solid;    
+    overflow: hidden;
+    white-space: nowrap;
+    animation: 
+        typing 1s steps(16),
+        cursor .4s step-end infinite;
+}
+
+@keyframes typing {
+    from {width: 0;}
+}
+
+@keyframes cursor {
+    50% {border-color: transparent}
+} 
+
+.title-div2{
+    position: absolute;
+    align-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+
+    display: inline-block;
+    margin: 0;
+}
+
+.title-text2{
+    font-size: clamp(1rem, 4vw, 2.5rem);
+    color: white;
+    text-align: center;
+    width: 100%;
+    font-family: 'consolas', monospace;
+
+    border-right: 5px solid;    
+    overflow: hidden;
+    white-space: nowrap;
+    animation: 
+        typing 2s steps(32),
+        cursor .4s step-end infinite;
+}
+

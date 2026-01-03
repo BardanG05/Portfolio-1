@@ -1,0 +1,149 @@
+/* For the left hand side bar stuff */
+
+.instagram-logo{
+    height: 32px;
+    padding-top: 25px;
+    padding-bottom: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.left-buttons-div{
+    margin-bottom: 40px;
+}
+
+.left-side-buttons{
+    color: white;
+    background-color: black;
+    border: none;
+    display: flex; 
+    flex-direction: row; 
+    align-items: center; 
+
+    width: 220px;
+    height: 48px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding: 12px 12px 12px 12px; 
+
+    text-align: left;
+    justify-content: normal;
+
+    transition: background-color 0.3s;
+    font-weight: 100;
+    font-size: 14px;
+    border-radius: 10px;
+}
+
+.left-side-buttons:hover{
+    background-color: rgb(33, 33, 33);
+    cursor: pointer;
+    
+}
+
+/* These are the icons */
+
+.text-icons{
+    display: inline-block;
+    padding-left: 16px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.home-icon{
+    height: 24px;
+    width: 24px;
+    background-image: url(Pictures/Icons/Home-icon.png);
+    background-position: center;
+    background-size: 24px;
+    display: inline-block;
+    background-repeat: no-repeat;
+}
+
+.search-icon{
+    height: 24px;
+    width: 24px;
+    background-image: url(Pictures/Icons/Search-icon.png);
+    background-position: center;
+    background-size: 24px;
+    display: inline-block;
+}
+
+.explore-icon{
+    height: 24px;
+    width: 24px;
+    background-image: url(Pictures/Icons/Explore-icon.png);
+    background-position: center;
+    background-size: 24px;
+    display: inline-block;
+}
+
+.reels-icon{
+    height: 24px;
+    width: 24px;
+    background-image: url(Pictures/Icons/Reels-icon.png);
+    background-position: center;
+    background-size: 24px;
+    display: inline-block;
+}
+
+.messages-icon{
+    height: 24px;
+    width: 24px;
+    background-image: url(Pictures/Icons/Message-icon.png);
+    background-position: center;
+    background-size: 24px;
+    display: inline-block;
+    background-repeat: no-repeat;
+}
+
+.notifications-icon{
+    height: 24px;
+    width: 24px;
+    background-image: url(Pictures/Icons/Notification-icon.png);
+    background-position: center;
+    background-size: 24px;
+    display: inline-block;
+    background-repeat: no-repeat;
+}
+
+.create-icon{
+    height: 24px;
+    width: 24px;
+    background-image: url(Pictures/Icons/Create-icon.png);
+    background-position: center;
+    background-size: 24px;
+    display: inline-block;
+    background-repeat: no-repeat;
+}
+
+.threads-icon{
+    height: 24px;
+    width: 24px;
+    background-image: url(Pictures/Icons/Threads-icon.png);
+    background-position: center;
+    background-size: 20px;
+    display: inline-block;
+    background-repeat: no-repeat;
+}
+
+.more-icon{
+    height: 24px;
+    width: 24px;
+    background-image: url(Pictures/Icons/More-icon.png);
+    background-position: center;
+    background-size: 24px;
+    display: inline-block;
+    background-repeat: no-repeat;
+}
+
+.profile-icon{
+    height: 24px;
+    width: 24px;
+    background-image: url(Pictures/Icons/Profile-icon.png);
+    background-position: center;
+    background-size: 24px;
+    display: inline-block;
+    background-repeat: no-repeat;
+}

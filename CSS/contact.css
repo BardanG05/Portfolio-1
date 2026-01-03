@@ -1,0 +1,205 @@
+/* GLOBAL RESET */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* IMAGES */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* CONTACT CONTAINER */
+.Contacts-container {
+    width: 100%;
+    min-height: 95vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: clamp(2rem, 5vw, 4rem);
+}
+
+.title-contact {
+    font-size: clamp(1.5rem, 4vw, 4rem);
+    font-weight: bold;
+    position: relative;
+    margin-bottom: clamp(2rem, 5vw, 3rem);
+}
+
+.title-contact::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background-image: conic-gradient(red, blue);
+}
+
+/* CONTACT DIV: FORM + SOCIALS */
+.contact-div {
+    display: flex;
+    flex-direction: column; /* mobile first */
+    align-items: center;
+    gap: clamp(2rem, 5vw, 4rem);
+    width: 100%;
+}
+
+h4{
+    font-size: clamp(1.2rem, 2vw, 4rem);
+}
+
+/* ====================== */
+/* FORM SECTION */
+/* ====================== */
+.form-div {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-div h4 {
+    text-align: center;
+    width: 100%;
+    margin-bottom: clamp(1rem, 3vw, 1.5rem);
+}
+
+.contact-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.form-divs {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: clamp(0.8rem, 2.5vw, 1rem);
+    margin-bottom: 0.4rem;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 0.75rem 0.9rem;
+    font-size: clamp(0.85rem, 2.5vw, 1rem);
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    border-radius: 0.6rem;
+    font-family: 'consolas', monospace;
+}
+
+textarea {
+    min-height: 140px;
+    resize: vertical;
+}
+
+.sub-button {
+    display: flex;
+    justify-content: center;
+}
+
+.submit-button {
+    padding: 0.7rem 1.8rem;
+    font-size: clamp(0.9rem, 3vw, 1.1rem);
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.submit-button:hover {
+    opacity: 0.85;
+    transform: translateY(-1px);
+}
+
+/* ====================== */
+/* SOCIALS SECTION */
+/* ====================== */
+.socials-wrapper {
+    width: 100%;
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.socials-wrapper h4 {
+    text-align: center;
+    margin-bottom: clamp(1rem, 3vw, 1.5rem);
+}
+
+.socials-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.socials-text {
+    font-size: clamp(1rem, 3vw, 1.3rem);
+    margin-bottom: 0.4rem;
+}
+
+.inside-div {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.link-button {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border: 1px solid white;
+    border-radius: 0.8rem;
+    background-color: black;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.LinkedIn-pic,
+.GitHub-pic,
+.Email-pic {
+    width: 40px;
+    height: 40px;
+}
+
+.LinkedIn-name,
+.GitHub-name,
+.Email-name {
+    font-size: clamp(0.85rem, 2.5vw, 1rem);
+}
+
+/* ====================== */
+/* DESKTOP LAYOUT (SIDE-BY-SIDE) */
+/* ====================== */
+@media (min-width: 900px) {
+    .contact-div {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        gap: clamp(3rem, 6vw, 6rem);
+    }
+
+    .form-div,
+    .socials-wrapper {
+        flex: 1;
+    }
+
+    .submit-button {
+        width: 30%;
+    }
+}
