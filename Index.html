@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bardan's Portfolio</title>
+    <link rel="stylesheet" href="CSS/Opening.css">
+    <link rel="stylesheet" href="CSS/scrollButton.css">
+    <link rel="stylesheet" href="CSS/titleTexts.css">
+    <link rel="stylesheet" href="CSS/navBar.css">
+    <link rel="stylesheet" href="CSS/aboutme.css">
+    <link rel="stylesheet" href="CSS/projects.css">
+    <link rel="stylesheet" href="CSS/contact.css">
+
+    
+</head> 
+<body>
+
+    <div class="background-container" id="container">    
+            <div class="background-img" id="background-img"></div> 
+            <div class="title-div">
+                <h1 class="title-text">Hi! I am Bardan.</h1> 
+            </div>
+            <div class="title-div2">
+                <h1 class="title-text2 noshow">This is my programming Portfolio</h1>
+            </div>
+            <div class="button-div">
+                <button class="scroll-button noshow" onclick="scrollDown()">View my portfolio</button>
+            </div>  
+    </div>
+
+    <div class="filter1"></div>
+
+    <div id="aboutMe" class="Portfolio-section">
+        <nav class="nav-bar">
+            <ul class="left-nav">
+                <li><a href="Index.html"><img class="bardan-logo" src="Icons/Bardan-white-back1.png" alt=""></a></li>
+            </ul>
+            <ul class="right-nav">
+                <li><a class="home" onclick="scrollToTop()">Home</a></li>
+                <li><a class="about-me" onclick="scrollAboutMe()">About B</a></li>
+                <li><a class="projects" onclick="scrollProjects()">Projects</a></li>
+                <li><a class="contact" onclick="scrollContact()">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="container">
+            <div class="bubbles">
+                <span style="--i:87" class="glow"></span>
+                <span style="--i:91"></span>
+                <span style="--i:102"></span>
+                <span style="--i:45"></span>
+                <span style="--i:16" class="glow"></span>
+                <span style="--i:17"></span>
+                <span style="--i:54" class="glow"></span>
+                <span style="--i:65"></span>
+                <span style="--i:23"></span>
+                <span style="--i:43" class="glow"></span>
+                <span style="--i:34"></span>
+                <span style="--i:55" class="glow"></span>
+                <span style="--i:90"></span>
+                <span style="--i:24"></span>
+                <span style="--i:56" class="glow"></span>
+                <span style="--i:26"></span>
+                <span style="--i:47" class="glow"></span>
+                <span style="--i:82"></span>
+                <span style="--i:39"></span>
+                <span style="--i:86" class="glow"></span>
+                <span style="--i:23"></span>
+                <span style="--i:13"></span>
+                <span style="--i:12" class="glow"></span>
+                <span style="--i:67"></span>
+                <span style="--i:106"></span>
+                <span style="--i:23" class="glow"></span>
+                <span style="--i:46"></span>
+                <span style="--i:19" class="glow"></span>
+                <span style="--i:71"></span>
+                <span style="--i:72" class="glow"></span>
+                <span style="--i:68"></span>
+                <span style="--i:23" class="glow"></span>
+                <span style="--i:43"></span>
+                <span style="--i:34"></span>
+                <span style="--i:65" class="glow"></span>
+                <span style="--i:96"></span>
+                <span style="--i:40" class="glow"></span>
+            </div>
+        </div>
+
+        <div class="About-me-container">
+            <h2 class="title-about-me">About Me</h2>
+
+            <div class="about-me-slides">
+                <div class="intro-p">
+                    <p class="intro-text">
+                       Hi, I’m Bardan, a student at Bournemouth University currently pursuing a BSc (Hons) in Business Computing and Analytics. My course has given me a strong foundation in both the technical and business aspects of technology — from data analytics and systems design to understanding how digital solutions create real business value.
+                    </p>
+
+                    <p class="intro-text">
+                        Alongside my studies, I’m a self-taught web developer with a passion for building engaging and user-focused web experiences. I enjoy combining creativity, problem-solving, and analytical thinking to develop solutions that are both effective and practical.
+                    </p>
+
+                    <p class="intro-text">
+                        I aspire to become a successful entrepreneur, and I see these skills — in programming, business, and data — as key tools that will help me bring ideas to life and build projects with real-world impact. Whether I’m coding, designing, or brainstorming new concepts, I’m always focused on learning, growing, and creating something meaningful.
+                    </p>
+                </div>
+
+                <div class="intro-pics">
+                    <img class="me1" src="Pictures/Bardan.JPG" alt="Photo of Bardan">
+                </div>
+            </div>
+        </div>
+
+    
+
+    <div id="projects"  class="Projects-container">
+            <h2 class="title-projects">
+                My Projects
+            </h2>
+           
+            <div class="projects-div"> 
+            
+                <div class="project-display portfolio">
+                    <img src="Project-Images/Portfolio.png" class="project-images" alt="Portfolio project">
+                    <a href="Portfolio.html"><span class="overlay-text">My Portfolio</span></a>
+                </div>
+                <div class="project-display final-project">
+                    <img src="Project-Images/Final-project.png" class="project-images" alt="Final project">
+                    <a href="CodingClub.html"><span class="overlay-text">Coding Club Final Project</span></a>
+                </div>
+                <div class="project-display valentine-trend">
+                    <img src="Project-Images/Valentine-trend.png" class="project-images" alt="Valentine trend project">
+                    <a href="ValentineTrend.html"><span class="overlay-text">Valentine Coding Trend</span></a>
+                </div>
+                <div class="project-display coming-soon">
+                    <div class="project-images" alt="Coming Soon"></div>
+                    <a ><span class="overlay-text coming-soon">Coming Soon</span></a>
+                </div>
+                
+            </div>
+           
+
+        
+                
+    </div>
+
+    <div id="contact" class="Contacts-container">
+    <h2 class="title-contact">Contact Me!</h2>
+
+    <div class="contact-div">
+
+        <!-- FORM SECTION -->
+        <div class="form-div">
+            <h4>Leave me a Message!</h4>
+            <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="0e061a12-0e59-4d8c-8218-ce63eb51b2be">
+
+                <div class="form-divs">
+                    <label for="inputName">Name</label>
+                    <input class="name" id="inputName" type="text" name="name" required placeholder="John Smith">
+                </div>
+
+                <div class="form-divs">
+                    <label for="inputEmail">Email</label>
+                    <input class="email" id="inputEmail" type="email" name="email" required placeholder="example@gmail.com">
+                </div>
+
+                <div class="form-divs">
+                    <label for="inputMessage">Message</label>
+                    <textarea class="message" id="inputMessage" name="message" required placeholder="Type your message here."></textarea>
+                </div>
+
+                <div class="form-divs sub-button">
+                    <button class="submit-button" type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- SOCIALS SECTION -->
+        <div class="socials-wrapper">
+            <h4>Find me on Socials!</h4>
+            <div class="socials-list">
+                <div class="LinkedIn-div">
+                    <p class="socials-text">LinkedIn</p>
+                    <a class="inside-div link-button gl" href="https://www.linkedin.com/in/bardan-gurung-20b1372a3/?skipRedirect=true" target="_blank">
+                        <img class="LinkedIn-pic" src="Icons/Linkedin-Dark-Theme-removebg-preview.png" alt="LinkedIn icon">
+                        <p class="LinkedIn-name">Bardan Gurung</p>
+                    </a>
+                </div>
+
+                <div class="GitHub-div">
+                    <p class="socials-text">GitHub</p>
+                    <a class="inside-div link-button gl" href="https://github.com/BardanG05" target="_blank">
+                        <img class="GitHub-pic" src="Icons/github-white-icon.webp" alt="GitHub icon">
+                        <p class="GitHub-name">BardanG05</p>
+                    </a>
+                </div>
+
+                <div class="Email-div">
+                    <p class="socials-text">Email</p>
+                    <div class="inside-div">
+                        <img class="Email-pic" src="Icons/Email-icon.webp" alt="Email icon">
+                        <p class="Email-name">Bardang05@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+
+    </div>  
+    
+
+    
+</body>
+
+<script src="1.js"></script>
+
+</html>
